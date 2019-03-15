@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("ALL")
 public class _25翻转链表前K个 {
     @Test
     void Main() {
