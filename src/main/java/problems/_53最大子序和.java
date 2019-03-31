@@ -1,3 +1,5 @@
+package problems;
+
 import org.junit.jupiter.api.Test;
 import utils.DataUtil;
 

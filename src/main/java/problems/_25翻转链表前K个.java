@@ -1,4 +1,7 @@
+package problems;
+
 import org.junit.jupiter.api.Test;
+import pojo.ListNode;
 
 @SuppressWarnings("ALL")
 public class _25翻转链表前K个 {
@@ -70,7 +73,7 @@ public class _25翻转链表前K个 {
 
 
 
-    private ListNode find(ListNode head,int k) {
+    private ListNode find(ListNode head, int k) {
         for (int i = 0; i < k; i++) {
             head = head.next;
         }
