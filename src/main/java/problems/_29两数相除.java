@@ -8,8 +8,8 @@ public class _29两数相除 {
 
     @Test
     void main() {
-        int a = Integer.MIN_VALUE;
-        int b = 16;
+        int a = -22222222;
+        int b = -2147483648;
         System.out.println(divide(a, b));
         System.out.println(a / b);
     }
@@ -22,6 +22,7 @@ public class _29两数相除 {
     *    大于：循环增加除数本身直到超过被除数，每次增加用一个count记录*/
     public int divide(int dividend, int divisor) {
         if (dividend == divisor) return 1;
+        if (divisor == Integer.MIN_VALUE) return 0;
         int a = Math.abs(dividend);
         int b = Math.abs(divisor);
         if (dividend == Integer.MIN_VALUE) {
@@ -41,9 +42,10 @@ public class _29两数相除 {
         while (a > b) {
             int t = b << 1;
             if (t < b || t > a) {
-
-                count += divide(a - b, bBind);
-
+                if(dividend == Integer.MIN_VALUE)
+                    count += divide(a - b + 1, bBind);
+                 else
+                     count += divide(a - b, bBind);
                 break;
             }else{
                 b = t;
