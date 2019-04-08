@@ -7,8 +7,8 @@ public class _122多次买卖股票 {
     @Test
     void Main() {
         DataUtil util = new DataUtil();
-        int[] nums = util.getArraysAndDisplay(0, 10, 10);
-//        int[] nums = util.stringToArray("7 6 4 3 3 4 6 1 4 9", " ");
+//        int[] nums = util.getArraysAndDisplay(0, 10, 10);
+        int[] nums = util.stringToArray("7 6 4 3 3 4 6 1 4 9", " ");
 
         System.out.println(maxProfit(nums));
     }

@@ -9,7 +9,7 @@ public class _25翻转链表前K个 {
     void Main() {
         ListNode node = new ListNode(1);
         ListNode head = node;
-        int k = 3;
+        int k = 10;
         for (int i = 0; i < k; i++) {
             node.next = new ListNode(i);
             node = node.next;
